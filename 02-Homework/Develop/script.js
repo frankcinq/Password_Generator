@@ -56,11 +56,7 @@ var specialCharactersArray = [" ","!",'"',"#","$","%","&","'","(",")","*","+",",
 
 
 
-var passwordWord = document.getElementById("password");
-var length = document.getElementById("length");
-var numbers = document.getElementById("numbers");
-var symbols = document.getElementById("symbols");
-var button = document.getElementById("button");
+
 
 
 
