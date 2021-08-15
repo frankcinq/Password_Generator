@@ -1,6 +1,8 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function generatePassword () {
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -10,21 +12,55 @@ function writePassword() {
 
 }
 
+
+var generatePassword = (length, characters) => {
+  var password = "";
+  for (var i = 0; i < length; i++) {
+    password += characters.charAt(
+      Math.floor(Math.random() * characters.length)
+  );
+}
+  return password;
+};
+
+
+
+
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", function() { 
+  
+}
+
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 //adding my arrays for password character options
-var upperCase = [Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M]
-var lowerCase = [q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m]
-var numbers = [1,2,3,4,5,6,7,8,9,0]
-var specialCharacters = [ ,!,",#,$,%,&,',(,),*,+,,,-,.,/,:,;,<,=,>,?,@,[,],\,^,_,`,{,},|,`]
+var upperCaseArray = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
+var lowerCaseArray = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
+var numbersArray = ["1","2","3","4","5","6","7","8","9","0"];
+var specialCharactersArray = [" ","!",'"',"#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","]","^","_","`","{","}","|"]
 
 
 
+
+var passwordWord = document.getElementById("password");
+var length = document.getElementById("length");
+var numbers = document.getElementById("numbers");
+var symbols = document.getElementById("symbols");
+var button = document.getElementById("button");
 
 
 
