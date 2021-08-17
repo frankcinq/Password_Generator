@@ -1,7 +1,24 @@
+//adding my arrays for password character options
+var upperCaseArray = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
+var lowerCaseArray = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
+var numbersArray = ["1","2","3","4","5","6","7","8","9","0"];
+var specialCharactersArray = [" ","!",'"',"#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","]","^","_","`","{","}","|"]
+
+
+/*check each window.prompt
+  1. length
+  2. if user chooses upper case (true/false boolean)
+   3. if lower case (true/false)
+   4. if numbers (true/false)                 
+  5. if spec. characters (true/false)
+  
+  */
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword () {
 
 // Write password to the #password input
 function writePassword() {
@@ -28,45 +45,31 @@ var generatePassword = (length, characters) => {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", function() { 
-  
-}
+  /*if (passwordCharacters < 8 || passwordCharacters > 128) {
+    console.log("Please enter valid option"); 
+  } else {
+    console.log("Valid");
+  }*/
+  var lengthPassword = window.prompt ("How many characters between 8 and 128 would you like?");
+  var upperCase = window.prompt ("Would you like uppercase letters?")
+  var lowerCase = window.prompt ("Would you like lowercase letters?")
+  var numbers = window.prompt ("Would you like numbers?")
+  var specialCharacters = window.prompt ("Would you like special characters?")
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  //window.prompt everything that I need, store response in variable, 
+})
 
 
 
 
-//adding my arrays for password character options
-var upperCaseArray = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
-var lowerCaseArray = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
-var numbersArray = ["1","2","3","4","5","6","7","8","9","0"];
-var specialCharactersArray = [" ","!",'"',"#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","]","^","_","`","{","}","|"]
-
-
-
-
-
-
+//var passwordCharacters =
 
 
 
 //adding criteria for password lenth requirement
-if (passwordCharacters < 8 || passwordCharacters > 128) {
-  return ("Please enter valid option"); 
-} else {
-  return ("Valid");
-}
+
+
+
 
 
 
