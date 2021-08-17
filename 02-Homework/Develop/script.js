@@ -51,6 +51,12 @@ generateBtn.addEventListener("click", function() {
     console.log("Valid");
   }*/
   var lengthPassword = window.prompt ("How many characters between 8 and 128 would you like?");
+   while (lengthPassword < 8 || lengthPassword > 128) {
+     alert("Select response between 8 to 128 characters.");
+     lengthPassword = window.prompt ("How many characters between 8 and 128 would you like?");
+  
+    }
+
   var upperCase = window.prompt ("Would you like uppercase letters?")
   var lowerCase = window.prompt ("Would you like lowercase letters?")
   var numbers = window.prompt ("Would you like numbers?")
